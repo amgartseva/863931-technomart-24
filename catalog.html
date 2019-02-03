@@ -10,19 +10,21 @@
           <nav class="main-navigation">
               <a class="header-logo" href="index.html">
                   <img src="img/logo.png" width="110px" height="18px" alt="Техномарт">
-              </a> 
-              <p class="search">Поиск:</p>
-              <p class="marker">Закладки: 0</p>
-              <p class="cart active">Корзина: 10</p>
-              <p class="buy">Оформить заказ</p> 
-              <!--Или лучше все p сделать через тег <a>?-->
-              <h1>Интернет-магазин 
+              </a>
+              <ul class="actions-list">
+                  <li><a href="#" class="search">Поиск:</a></li>
+                  <li><a href="#" class="marker">Закладки: 0</a></li>
+                  <li><a href="#" class="cart active">Корзина: 10</a></li>
+              </ul>
+              <a href="#" class="buy">Оформить заказ</a>  
+              
+              <p>Интернет-магазин 
                   строительных материалов 
-                  и инструментов для ремонта</h1>
+                  и инструментов для ремонта</p>
               <div class="phone">+7 (812) 555-05-55</div>
               <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <div class="user">Равшан Джамшутович</div>
               <ul class="user-navigation-inner">
+                  <li><div class="user">Равшан Джамшутович</div></li>
                   <li><a class="button">Мои заказы</a></li>
                   <li><a class="button">Личный кабинет</a></li>
               </ul>
@@ -43,7 +45,7 @@
               <li><a href="index.html"><img src="home.jpg" alt="Главная"></a></li>
               <li><a href="catalog.html">Каталог</a></li>
               <li><a href="tool.html">Инструмент</a></li>
-              <li><a href="tool/perforator.html">Перфораторы</a></li>
+              <li>Перфораторы</li>
           </ul>
           <h1>Перфораторы</h1>
           <section class="catalog-list">
@@ -56,6 +58,8 @@
                       <span class="old-price">22500 Р.</span>
                       <img src="http://placehold.it/141x38">
                       <span class="price">15500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 6000</h3>
@@ -65,6 +69,8 @@
                       <span class="old-price">30500 Р.</span>
                       <img src="http://placehold.it/141x38">
                       <span class="price">25500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 2000</h3>
@@ -74,6 +80,8 @@
                       </a>
                       <img src="http://placehold.it/141x38">
                       <span class="price">12500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 3000</h3>
@@ -83,6 +91,8 @@
                       <span class="old-price">22500 Р.</span>
                       <img src="http://placehold.it/141x38">
                       <span class="price">15500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 6000</h3>
@@ -93,6 +103,8 @@
                       <span class="old-price">30500 Р.</span>
                       <img src="http://placehold.it/141x38">
                       <span class="price">25500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 2000</h3>
@@ -101,6 +113,8 @@
                       </a>
                       <img src="http://placehold.it/141x38">
                       <span class="price">12500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 3000</h3>
@@ -111,6 +125,8 @@
                       <span class="old-price">22500 Р.</span>
                       <img src="http://placehold.it/141x38">
                       <span class="price">15500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 6000</h3>
@@ -120,6 +136,8 @@
                       <span class="old-price">30500 Р.</span>
                       <img src="http://placehold.it/141x38">
                       <span class="price">25500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3>Перфоратор BOSCH<br> BFG 2000</h3>
@@ -128,6 +146,8 @@
                       </a>
                       <img src="http://placehold.it/141x38">
                       <span class="price">12500 Р.</span>
+                      <button class="hidden-buy">Купить</button>
+                      <button class="hidden-mark">В закладки</button>
                   </li>
               </ul>
               <ul class="pagination-list">
@@ -143,48 +163,27 @@
               <div class="company">
                   <h2>Производители:</h2>
                   <ul>
-                      <li>
-                          <img src="checked.jpg">
-                          BOSCH
-                      </li>
-                      <li>
-                          <img src="unchecked.jpg">
-                          ИНТЕРСКОЛ
-                      </li>
-                      <li>
-                          <img src="checked.jpg">
-                          MAKITA
-                      </li>
-                      <li>
-                          <img src="unchecked.jpg">
-                          DEWALT
-                      </li>
-                      <li>
-                          <img src="unchecked.jpg">
-                          HITACHI
-                      </li>
+                      <li>BOSH</li>
+                      <li>ИНТЕРСКОЛ</li>
+                      <li>MAKITA</li>
+                      <li>DEWALT</li>
+                      <li>HITACHI</li>
                   </ul>
               </div>
               <div>
                   <h2>Питание:</h2>
                   <ul>
-                      <li>
-                          <img src="checked.jpg">
-                          Аккумуляторные
-                      </li>
-                      <li>
-                          <img src="unchecked.jpg">
-                          Cетевые
-                      </li>
+                      <li>Аккумуляторные</li>
+                      <li>Cетевые</li>
                   </ul>
               </div>  
-              <a href="show.html" class="button">Показать</a>
+              <button class="show">Показать</button>
           </section>
           
       </main>
       
       <footer class="main-footer">
-          <nav class="footer-main-navigation">
+          <div class="footer-main-navigation">
               <a class="footer-logo">
                   <img src="http://placehold.it/150x100">
               </a>
@@ -195,9 +194,9 @@
                   <li><a href="delivery.html">Доставка</a></li>
                   <li><a href="contacts.html">Контакты</a></li>
               </ul>
-          </nav>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>+7 (812) 555-05-55</p>
+          </div>
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">+7 (812) 555-05-55</p>
           <ul class="footer-navigation">
               <li><a href="materials.html">Материалы</a></li>
               <li><a href="equipment.html">Техника</a></li>
@@ -214,7 +213,7 @@
           <p class="mail">Обратная связь:<br>
               <span>mail@htmlacademy.ru</span></p>
           <p class="credits">Разработано &mdash;<br>
-              <span><a href="https://up.htmlacademy.ru/htmlcss/24">htmlacademy.ru</a></span></p>
+              <a href="https://up.htmlacademy.ru/htmlcss/24">htmlacademy.ru</a></p>
       </footer>
       
   </body>
