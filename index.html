@@ -24,8 +24,8 @@
               <div class="phone">+7 (812) 555-05-55</div>
               <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <ul class="user-navigation">
-                  <li><a class="button">Войти</a></li>
-                  <li><a class="button">Регистрация</a></li>
+                  <li><a href="#" class="button">Войти</a></li>
+                  <li><a href="#" class="button">Регистрация</a></li>
               </ul>
               <ul class="site-navigation">
                   <li><a>Главная</a></li>
@@ -50,21 +50,21 @@
                   <li>Автотрейдинг</li>
                   <li>ЖелДорЭкспедиция</li>
               </ul>
-              <a class="button" href="about.html">Подробнее о компании</a>
+              <a class="main-button" href="about.html">Подробнее о компании</a>
           </section> 
           <section class="contacts">
               <h2>Контакты</h2>
               <p>Вы можете забрать товар сами,<br>
               заехав в наш офис:</p>
-              <img src="img/map.png" wiidth="300px" height="158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-              <a class="button" href="contacts.html">Заблудились? Напишите нам!</a>
+              <a href="#"><img src="img/map.png" wiidth="300px" height="158px" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+              <button class="main-button">Заблудились? Напишите нам</button>
           </section>    
       </main>
       
       <footer class="main-footer">
           <div class="footer-main-navigation">
               <a class="footer-logo">
-                  <img src="http://placehold.it/150x100">
+                  <img src="img/logo-footer.png" width="138" height="23" alt="Техномарт">
               </a>
               <ul class="site-navigation">
                   <li><a href="about.html">Компания</a></li>
@@ -94,6 +94,22 @@
           <p class="credits">Разработано &mdash;<br>
               <a href="https://up.htmlacademy.ru/htmlcss/24">htmlacademy.ru</a></p>
       </footer>
+      
+      <section class="pop-up-map">
+          <a href="https://www.google.com/maps"><img src="img/big-map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+      </section> 
+      
+      <section class="pop-up-write-us">
+          <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
+              <label for="write-us-name">Ваше имя:</label> 
+              <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
+              <label for="write-us-email">Ваш e-mail:</label> 
+              <input type="email" name="email" id="write-us-email" placeholder="email@example.com">
+              <label for="write-us-message">Текст письма:</label> 
+              <textarea name="message" id="write-us-message">В свободной форме</textarea>
+              <button type="submit" class="main-button">Отправить</button>  
+          </form>  
+      </section>
       
   </body>
 </html>

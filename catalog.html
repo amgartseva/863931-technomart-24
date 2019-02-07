@@ -25,8 +25,8 @@
               <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <ul class="user-navigation-inner">
                   <li><div class="user">Равшан Джамшутович</div></li>
-                  <li><a class="button">Мои заказы</a></li>
-                  <li><a class="button">Личный кабинет</a></li>
+                  <li><a href="#" class="button">Мои заказы</a></li>
+                  <li><a href="#" class="button">Личный кабинет</a></li>
               </ul>
               <ul class="site-navigation">
                   <li><a href="index.html">Главная</a></li>
@@ -158,26 +158,54 @@
               </ul>
           </section> 
           <section class="filter">
-              <!-- Параметры цены-->
-              <hr>
-              <div class="company">
-                  <h2>Производители:</h2>
-                  <ul>
-                      <li>BOSH</li>
-                      <li>ИНТЕРСКОЛ</li>
-                      <li>MAKITA</li>
-                      <li>DEWALT</li>
-                      <li>HITACHI</li>
-                  </ul>
-              </div>
-              <div>
-                  <h2>Питание:</h2>
-                  <ul>
-                      <li>Аккумуляторные</li>
-                      <li>Cетевые</li>
-                  </ul>
-              </div>  
-              <button class="show">Показать</button>
+              <h2>Фильтр:</h2>
+              <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                      <legend>Цена:</legend>
+                      <!-- Параметры цены-->
+                  </fieldset>
+                  <br>
+                  <fieldset>
+                      <legend>Производители:</legend>
+                          <ul>
+                              <li class="filter-option">
+                                  <input type="checkbox" name="bosh" id="bosh">
+                                  <label for="bosh">BOSH</label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" name="interskol" id="interskol">
+                                  <label for="interskol">ИНТЕРСКОЛ</label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" name="makita" id="makita">
+                                  <label for="makita">MAKITA</label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" name="dewalt" id="dewalt">
+                                  <label for="dewalt">DEWALT</label>
+                              </li>
+                              <li>
+                                  <input type="checkbox" name="hitachi" id="hitachi">
+                                  <label for="hitachi">HITACHI</label>
+                              </li>
+                          </ul>
+                  </fieldset>
+                  <br>
+                  <fieldset>      
+                      <legend>Питание:</legend>
+                          <ul>
+                              <li>
+                                  <input type="radio" name="power" id="battery" value="battery">
+                                  <label for="battery">Аккумуляторные</label>
+                              </li>
+                              <li>
+                                  <input type="radio" name="power" id="wire" value="wire">
+                                  <label for="wire">Cетевые</label>
+                              </li>
+                          </ul>  
+                  </fieldset> 
+                  <button type="submit" class="show">Показать</button>
+              </form>
           </section>
           
       </main>
@@ -185,7 +213,7 @@
       <footer class="main-footer">
           <div class="footer-main-navigation">
               <a class="footer-logo">
-                  <img src="http://placehold.it/150x100">
+                  <img src="img/logo-footer.png" width="138" height="23" alt="Техномарт">
               </a>
               <ul class="site-navigation">
                   <li><a href="about.html">Компания</a></li>
@@ -215,6 +243,14 @@
           <p class="credits">Разработано &mdash;<br>
               <a href="https://up.htmlacademy.ru/htmlcss/24">htmlacademy.ru</a></p>
       </footer>
+      
+      <section class="pop-up-cart">
+          <p>Товар добавлен в корзину!</p>
+          <div class="pop-up-buttons">
+              <a href="#">Оформить заказ</a>
+              <input type="button" value="Продолжить покупки">
+          </div>    
+      </section>
       
   </body>
 </html>
