@@ -404,6 +404,7 @@ a {
     
     border: solid 1px #e5e5e5;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .catalog-item:hover {
@@ -716,7 +717,10 @@ a {
 }
 
 .catalog-item {
-    width: 220px;
+    position: relative;
+/*    4*/
+    width: 218px;
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -726,4 +730,36 @@ a {
     justify-content: flex-start;
 
     list-style: none;
+}
+
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+  
+    width: 60px;
+    height: 60px;
+  
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+/*
+.catalog-item  {
+    background-image: url("img/new-flag.png") no-repeat 0 0;
+}
+*/
+
+.catalog-item .actions-button {
+  display: none;
+}
+
+.catalog-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.catalog-item .image img {
+  max-width: 100%;
 }
