@@ -63,11 +63,15 @@
           <div class="catalog-columns">
             <div class="sort"> 
                 <h2>Сортировка:</h2>
-                <ul>
+                <ul class="sort-list">
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По функционалу</a></li>
                 </ul>
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <input type="radio" name="sort" id="to-top" value="to-top" checked>
+                    <input type="radio" name="sort" id="to-bottom" value="to-bottom">
+                </form>
             </div>
             <section class="catalog-list">
                 <ul>
@@ -192,7 +196,10 @@
                 <form class="filters" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Цена:</legend>
-                        <!-- Параметры цены-->
+                        <input type="range" min="0" max="30000">
+                        <input type="range" min="0" max="30000">
+                        <p>0</p>
+                        <p>30000</p>
                     </fieldset>
                     <hr>
                     <fieldset>
