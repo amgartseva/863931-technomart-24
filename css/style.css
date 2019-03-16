@@ -30,7 +30,13 @@ a {
 
 .actions-list,
 .user-navigation,
-.site-navigation {
+.site-navigation,
+.ad,
+.popular-list,
+.popular-list-producer,
+.service-name,
+.sort-list,
+.sort-list-direction {
     list-style: none;
 }
 
@@ -42,15 +48,18 @@ a {
 }
 
 .marker:hover,
-.cart-active:hover {
+.cart:hover {
     background-color: #212a3a;
 }
 
 .marker:focus,
-.cart-active:focus {
-    color: rgba(255, 255, 255, 0.6);
-    
+.cart:focus {
     background-color: #161d29;
+}
+
+.marker a:focus,
+.cart a:focus{
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .user-navigation a {
@@ -139,22 +148,189 @@ a {
     color: #ffffff;
     
     background-color: #32425c;
+    box-shadow: inset 0 -5px 0 0 #293449;
 }
 
-.site-navigation a:hover {
+.site-navigation li:hover {
     background-color: #1d2739;
+}
+
+.site-navigation li:focus {
+    background-color: #1d2739; 
 }
 
 .site-navigation a:focus {
     color: rgba(255, 255, 255, 0.5); 
+}
+
+.ad {
+    padding: 0;
+    margin: 0;
+}
+
+.ad li {
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ad-button {
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
     
-    background-color: #1d2739; 
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.ad-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ad-button:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ad li:nth-child(1) {
+    background-color: #ffbf47;
+}
+
+.ad li:nth-child(2) {
+    background-color: #3bbce3;
+}
+
+.ad li:nth-child(3) {
+    background-color: #dc91d8;
+}
+
+.ad li:nth-child(4) {
+    background-color: #8ed78f;
+}
+
+.ad li:nth-child(5) {
+    background-color: #ffbf47;
+}
+
+.slider h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.slider p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.slider .main-button:hover {
+    background-color: #ca2c37;
+}
+
+.slider .main-button:focus {
+    background-color: #ba2732;
+}
+
+.popular-header {
+    background-color: #f9f5f0;
+}
+
+.popular-header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+    font-weight: normal;
+}
+
+.producer-item {
+    border: solid 1px #eaeaea;
+} 
+
+.producer-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.producer-item:focus {
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.producer-item a:focus {
+    opacity: 0.3;
+}
+
+.service {
+    background-color: #f4f7f9;
+}
+
+.service h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.service h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.service p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.service-name {
+    padding: 0;
+    margin: 0;
+}
+
+.service-name li{
+    font-size: 21px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    
+    background-color: #33445a;
+    box-shadow: 0 1px 0 0 #293449,
+        inset 0 1px 0 0 #405069;
+}
+
+.service-item a{
+    color: #ffffff;
+}
+
+.service-item:hover {
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    background-color: #293449;
+}
+
+
+.service-name .active {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.service-item.active a {
+    color: #32425c;
 }
 
 .company h2 {
     font-size: 30px; 
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .company p {
@@ -181,6 +357,7 @@ a {
     font-size: 30px; 
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .contacts p {
@@ -306,7 +483,7 @@ a {
 
 /*Стили для каталога*/
 
-.cart-active {
+.cart.active {
     background-color: #ee3643;
 }
 
@@ -323,6 +500,10 @@ a {
     background-color: #ffffff;
 }
 
+.user:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .user-navigation-inner .button {
     font-size: 16px;
     line-height: 18px;
@@ -330,6 +511,12 @@ a {
     text-decoration: underline;
 }
 
+.user-navigation-inner .button:hover {
+    color: #ee3643;
+}
+
+.user-navigation-inner .button:focus {
+    color: rgba(50, 66, 92, 0.3);
 }
 
 .breadcrumbs a,
@@ -345,8 +532,54 @@ a {
     line-height: 30px;
     color: #32425c;
     text-transform: uppercase;
+    font-weight: normal;
     
     background-color: #f2f6f8;
+}
+
+.sort {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #f7f3ec;
+}
+
+.sort h2 {
+    font-weight: normal;
+}
+
+.sort-item .sort-active {
+    color: #ee3643;
+    
+    border-bottom: none;
+}
+
+.sort-item a {
+    color: rgba(0, 0, 0, 0.3);
+    
+    border-bottom: 1px dotted #ee3643;
+}
+
+.sort-item a:hover {
+    color: #000000;
+    
+    border-bottom: 1px solid #ee3643;
+}
+
+.range {
+    background-color: #f7f3ec;
+}
+
+.filter-price p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    
+    background-color: #f7f3ec;
 }
 
 .filter h2 {
@@ -354,6 +587,7 @@ a {
     text-transform: uppercase;
     line-height: 18px;
     color: #000000;
+    font-weight: normal;
     
     background-color: #f7f3ec;
 }
@@ -452,7 +686,6 @@ a {
 
 .hidden-buy:focus{
     background-color: #518534;
-    
 }
 
 .hidden-mark {
@@ -472,6 +705,56 @@ a {
 
 .hidden-mark:focus {
     opacity: 0.3;
+}
+
+.more-about {
+    background-color: #f4f7f9;
+}
+
+
+.more-about h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: normal;
+}
+
+.more-about p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.pagination-item {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    
+    border: solid 1px #e5e5e5;
+}
+
+.pagination-item a:visited{
+    color: #000000;
+}
+
+.pagination-item a:hover{
+    border: solid 1px #e5e5e5;
+}
+
+.pagination-item a:focus{
+    color: #000000;
+    
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-item.current {
+    color: #ffffff;
+    
+    background-color: #ee3643;
 }
 
 /*Стили постоения сеток для главной*/
