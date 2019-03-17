@@ -1147,6 +1147,47 @@ a {
     justify-content: space-between;
 }
 
+.catalog-columns-inner {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sort h2 {
+    margin: 0;
+    padding: 0; 
+}
+
+.sort-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.sort-item {
+    padding-right: 50px;
+}
+
+.sor-item:last-child {
+    padding-right: 0;
+}
+
+.sort-list-direction {
+    display: flex;
+}
+
 .filter {
     width: 220px;
     order: 1;
@@ -1162,7 +1203,6 @@ a {
 
 .catalog-list {
     width: 700px;
-    order: 2;
     margin-bottom: 54px;
 }
 
@@ -1178,7 +1218,6 @@ a {
 
 .catalog-item {
     position: relative;
-/*    4*/
     width: 218px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1190,6 +1229,11 @@ a {
     justify-content: flex-start;
 
     list-style: none;
+}
+
+.more-about .container {
+    padding-top: 65px;
+    padding-bottom: 70px;
 }
 
 .catalog-item .flag {
