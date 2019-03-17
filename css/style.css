@@ -351,6 +351,8 @@ a {
     color: #ffffff;
     
     background-color: #ee3643;
+    border: none;
+    border-radius: 2px;
 }
 
 .contacts h2 {
@@ -867,6 +869,181 @@ a {
 .contacts {
     width: 300px;
 }
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 53px;
+}
+
+.ad {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+}
+
+.ad li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    padding-left: 26px;
+    padding-top: 23px; 
+    padding-bottom: 23px;
+    margin-bottom: 20px;
+}
+
+.ad li:last-child {
+    padding-bottom: 0;
+}
+
+.ad-button {
+    width: 135px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 2px;
+}
+
+.slider { /*ВОПРОС*/
+    position: relative;
+    width: 621px;
+    height: 267px;
+}
+
+.slider-drill h2{
+    position: absolute;
+    left: 24px;
+    top: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-drill p {
+    position: absolute;
+    left: 24px;
+    top: 65px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider .main-button {
+    position: absolute;
+    width: 195px;
+    bottom: 22px;
+    left: 24px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.slider-perforator {
+    display: none;
+}
+
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+.popular-header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.popular-header .main-button {
+    width: 253px;
+    padding: 0;
+}
+
+.popular-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-list-producer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 65px;
+}
+
+.producer-item {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.service .container{
+    padding-top: 65px;
+}
+
+.service h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.service p {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    margin-bottom: 70px;
+}
+
+.service-name {
+    padding-right: 80px;
+}
+
+.service-item {
+    width: 240px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.delivery h3,
+.guarantee h3,
+.credit h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.delivery p,
+.guarantee p,
+.credit p {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.second-slider {
+    display: flex;
+    padding-bottom: 98px;
+    margin-bottom: 80px;
+}
+
+.guarantee {
+    display: none;
+}
+
+.credit {
+    display: none;
+}
+
 /*Footer*/
 
 .footer-main-navigation {
