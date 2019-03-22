@@ -16,7 +16,7 @@
                     <a class="header-logo">
                         <img src="img/logo.png" width="110" height="18" alt="Техномарт">
                     </a> 
-                    <a href="#" class="search">Поиск:</a>
+                    <input class="search" type="search" name="search" id="search" placeholder="Поиск:">
                     <ul class="actions-list">
                         <li><a href="#" class="marker">Закладки: 0</a></li>
                         <li><a href="#"  class="cart">Корзина: 0</a></li>
@@ -318,20 +318,30 @@
           </div>  
       </footer>
       
-      <section class="pop-up-map">
+      <section class="pop-up pop-up-map">
           <a href="https://www.google.com/maps"><img src="img/big-map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+          <button class="modal-close" type="button">Закрыть</button>
       </section> 
       
-      <section class="pop-up-write-us">
+      <section class="pop-up pop-up-write-us">
           <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
-              <label for="write-us-name">Ваше имя:</label> 
-              <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
-              <label for="write-us-email">Ваш e-mail:</label> 
-              <input type="email" name="email" id="write-us-email" placeholder="email@example.com">
+              <div class="form-top">
+                  <div class="form-name">
+                      <label for="write-us-name">Ваше имя:</label> 
+                      <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
+                  </div>
+                  <div class="form-email">
+                      <label for="write-us-email">Ваш e-mail:</label> 
+                      <input type="email" name="email" id="write-us-email" placeholder="email@example.com">
+                  </div>
+              </div>
               <label for="write-us-message">Текст письма:</label> 
               <textarea name="message" id="write-us-message" placeholder="В свободной форме"></textarea>
-              <button type="submit" class="main-button">Отправить</button>  
-          </form>  
+          </form> 
+          <div class="pop-up-send">
+                <button type="submit" class="main-button">Отправить</button>
+          </div>
+          <button class="modal-close" type="button">Закрыть</button>
       </section>
       
   </body>

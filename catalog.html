@@ -16,7 +16,7 @@
                     <a class="header-logo">
                         <img src="img/logo.png" width="110" height="18" alt="Техномарт">
                     </a> 
-                    <a href="#" class="search">Поиск:</a>
+                    <input class="search" type="search" name="search" id="search" placeholder="Поиск:">
                     <ul class="actions-list">
                         <li  class="marker"><a href="#">Закладки: 0</a></li>
                         <li class="cart active"><a href="#">Корзина: 10</a></li>
@@ -340,12 +340,13 @@
             </div>  
       </footer>
       
-      <section class="pop-up-cart">
+      <section class="pop-up pop-up-cart">
           <p>Товар добавлен в корзину!</p>
           <div class="pop-up-buttons">
-              <a href="#">Оформить заказ</a>
-              <input type="button" value="Продолжить покупки">
-          </div>    
+              <a class="main-button" href="#">Оформить заказ</a>
+              <button class="continue-shopping-button">Продолжить покупки</button>
+          </div> 
+          <button class="modal-close" type="button">Закрыть</button>
       </section>
       
   </body>
