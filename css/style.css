@@ -2596,3 +2596,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     background-color: white;
 }
+
+.pop-up-show {
+    display: block;
+}
