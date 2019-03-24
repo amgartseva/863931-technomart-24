@@ -2652,3 +2652,7 @@ input[type="radio"].visually-hidden {
                 transform: translateY(0);
     }
 }
+
+.item-name {
+    color: #000000;
+}
