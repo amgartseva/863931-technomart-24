@@ -957,6 +957,8 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 280px;
 }
 
@@ -1321,6 +1323,8 @@ img {
     margin-top: 25px;
     margin-right: 24px;
     margin-bottom: 26px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .popular-list {
@@ -1692,6 +1696,7 @@ img {
 
 .log-out {
     display: inline-block;
+    vertical-align: top;
     padding: 0;
     margin: 0;
     width: 20px;
@@ -1815,6 +1820,8 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 0;
     padding-left: 18px;
@@ -1913,6 +1920,7 @@ img {
 .catalog-item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 218px;
     margin-bottom: 20px;
 }
@@ -2109,6 +2117,7 @@ img {
 
 .company .main-button {
     display: inline-block;
+    vertical-align: top;
     width: 220px; 
     text-align: center;
     padding-top: 11px;
@@ -2122,6 +2131,7 @@ img {
 
 .contacts a {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 32px;
 }
 
@@ -2339,6 +2349,7 @@ input[type="radio"].visually-hidden {
 
 .sort-list-direction a{
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     padding: 0;
 }
@@ -2586,8 +2597,56 @@ input[type="radio"].visually-hidden {
 
 .pop-up-show {
     display: block;
+    
+    -webkit-animation: bounce 0.6s;
+    
+            animation: bounce 0.6s;
 }
 
 .catalog-item span {
     display: block;
+}
+
+/*Анимация для форм*/
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+                transform: translateY(-2000px);
+    }
+
+    70% {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+                transform: translateY(-2000px);
+    }
+
+    70% {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
 }
